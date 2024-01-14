@@ -4,14 +4,14 @@ int RandomPoints;
 Random numberGen = new Random();
 RandomPoints = numberGen.Next(1,11);
 
-Console.WriteLine("How many times, would you like to run your spell?(be carefull, you have randomly generated spell points, so you might go over your spellpoints, resulting in the remaining experience gained from spells amounting to 0)");
+Console.WriteLine("How many times, would you like to run your spell?(be careful, you have randomly generated spell points, so you might go over your spellpoints, resulting in the remaining experience gained from spells amounting to 0)");
 NumberSpell = Convert.ToInt32(Console.ReadLine());
 
 
 Wizard AK = new Wizard();
 AK.name = "AK";
 AK.age = 1000;
-AK.spell = "firesigma";
+AK.spell = "fire";
 AK.SpellPoints = RandomPoints;
 
 while (NumberSpell > 0)
